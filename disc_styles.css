@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    
+}
+
+p{
+    line-height: 40px;
+}
+
+header{
+    display: flex;
+    width:100%;
+    height: auto;
+    min-height: 50vh;
+    background-image: url("img/Hail-To-The-Thief.jpg");
+    background-position: center;
+    flex-direction: column;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+header * {
+    position: relative;
+    z-index: 2;
+}
+#nav-container{
+    display:flex;
+    flex-direction: row;
+    height:10%;
+    margin: 5px;
+    
+}
+#logo-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height:10vh
+}
+#logo-container img{
+    height: 100%;
+    width:auto;
+
+}
+
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    width: 60vw;
+}
+
+.nav-element{
+    color: white;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.phone{
+    border: solid 1px white;
+    border-radius: 8px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.phone:hover{
+    background-color: red;
+    border-color: red;
+
+}
+#main-header{
+    height:90%;
+    margin-top:10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+#main-header h1{
+    font-weight: normal;
+    font-size: 4rem;
+}
+
+main{
+    width: 100%;
+    margin:0;
+    text-align: center;
+}
+
+main h2{
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+article {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 3vw; 
+}
+
+.contenedor-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    width: 100%;
+}
+
+.imagen-section {
+    text-align: center;
+    flex: 1; 
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+}
+
+.imagen-section img {
+    max-height: 500px;
+    max-width:auto;
+    object-fit: cover;
+    height: auto; 
+    border-radius: 10px;
+}
+
+.texto-section {
+    flex: 2; 
+    margin: 0 auto;
+    padding: 5vw;
+    text-align: left; 
+}
+
+.texto-section h2 {
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.texto-section p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem; 
+}
+
+.Listen {
+    width: 200px; 
+    display: inline-block; 
+    text-align: center;
+    padding: 12px 10px; 
+    box-sizing: border-box; 
+    margin: 5px; 
+    border-radius: 8px;
+    color: white;
+    background-color: red;
+    border: solid red 2px;
+}
+
+@media (max-width: 768px) {
+    #welcome {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #contenedor-section {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    #texto-section {
+        padding: 3vw;
+    }
+
+    #imagen-section img {
+        max-width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #texto-creator h2 {
+        font-size: 1.5rem;
+    }
+
+    #texto-creator p {
+        font-size: 1rem;
+    }
+
+    #catalog-button,
+    #about-button {
+        width: 100%; 
+        font-size: 0.9rem;
+    }
+}
+
+#explore-more {
+    position: relative; 
+    height: auto;
+    min-height: 55vh;
+    background-image: url("img/In-Raimbows-2-background.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#explore-more::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1; 
+}
+
+#explore-more * {
+    position: relative; 
+    z-index: 2; 
+}
+
+#explore-more h2 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+#explore-more p {
+    font-size: 1.5rem;
+}
+
+#explore-more button {
+    width: 200px; 
+    display: inline-block; 
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 12px 10px; 
+    box-sizing: border-box; 
+    margin: 5px; 
+    border-radius: 8px;
+    color: white;
+    background-color: transparent;
+    border: solid white 2px;
+    border-radius: 8px;
+}

@@ -329,7 +329,6 @@ main{
     color: white;
     background-color: red;
     border: solid red 2px;
-    border-radius: 8px;
 }
 
 #about-button{
