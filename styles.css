@@ -380,7 +380,56 @@ main{
     }
 }
 
+#explore-more {
+    position: relative; 
+    height: auto;
+    min-height: 55vh;
+    background-image: url("img/Hail-To-The-Thief.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 
-#merch{
-    height: 60vh;
+#explore-more::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1; 
+}
+
+#explore-more * {
+    position: relative; 
+    z-index: 2; 
+}
+
+#explore-more h2 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+#explore-more p {
+    font-size: 1.5rem;
+}
+
+#explore-more button {
+    width: 200px; 
+    display: inline-block; 
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 12px 10px; 
+    box-sizing: border-box; 
+    margin: 5px; 
+    border-radius: 8px;
+    color: white;
+    background-color: transparent;
+    border: solid white 2px;
+    border-radius: 8px;
 }
