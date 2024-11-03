@@ -8,6 +8,11 @@ body{
     margin:0;
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
+    
+}
+
+p{
+    line-height: 40px;
 }
 
 header{
@@ -257,10 +262,125 @@ main{
     }
 }
 
-#latest-album{
-    height: 100vh;
+#about-creator {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 5vw; 
 }
 
+#contenedor-creator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    width: 100%;
+}
+
+#imagen-creator {
+    text-align: center;
+    flex: 1; 
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+}
+
+#imagen-creator img {
+    width: 100%;
+    max-width: 450px; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+#texto-creator {
+    flex: 2; 
+    margin: 0 auto;
+    padding: 5vw;
+    text-align: left; 
+}
+
+#texto-creator h2 {
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+#texto-creator p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem; 
+}
+
+#catalog-button,
+#about-button {
+    width: 200px; 
+    display: inline-block; 
+    text-align: center;
+    padding: 12px 10px; 
+    box-sizing: border-box; 
+    margin: 5px; 
+    border-radius: 8px;
+}
+
+#catalog-button{
+    color: white;
+    background-color: red;
+    border: solid red 2px;
+    border-radius: 8px;
+}
+
+#about-button{
+    color: red;
+    background-color: white;
+    border: solid red 2px;
+}
+
+@media (max-width: 768px) {
+    #about-creator {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #contenedor-creator {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    #texto-creator {
+        padding: 3vw;
+    }
+
+    #imagen-creator img {
+        max-width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    #catalog-button,
+    #about-button {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    #texto-creator h2 {
+        font-size: 1.5rem;
+    }
+
+    #texto-creator p {
+        font-size: 1rem;
+    }
+
+    #catalog-button,
+    #about-button {
+        width: 100%; 
+        font-size: 0.9rem;
+    }
+}
+
+
 #merch{
-    height: 60vh
+    height: 60vh;
 }
