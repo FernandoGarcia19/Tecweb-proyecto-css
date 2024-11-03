@@ -57,7 +57,7 @@ header * {
 
 }
 
-nav{
+#nav-container nav{
     display:flex;
     flex-direction:row;
     justify-content:center;
@@ -433,3 +433,36 @@ main{
     border: solid white 2px;
     border-radius: 8px;
 }
+
+footer {
+    height:auto;
+    min-height: 15vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer nav{
+    display:flex;
+    flex-direction:row;
+    width: auto;
+}
+
+.foot-element{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+
+#footer-logo{
+    display: flex;
+    max-height:10vh;
+    max-width: auto;
+    align-items: flex-start;
+}
+
+#footer-logo img{
+    max-height: 10vh;
+}
+
