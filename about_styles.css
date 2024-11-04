@@ -15,6 +15,17 @@ p{
     line-height: 40px;
 }
 
+a{
+    color:white;
+    text-decoration: none;
+}
+
+button:hover{
+    cursor: pointer;
+    border: none !important;
+    background-color: rgb(124, 0, 0) !important;
+}
+
 header{
     display: flex;
     width:100%;
@@ -298,7 +309,9 @@ footer nav{
     padding-left: 17px;
     padding-right: 17px;
 }
-
+footer a{
+    color:black;
+}
 
 #footer-logo{
     display: flex;
