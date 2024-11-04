@@ -222,6 +222,18 @@ article {
         width: 100%; 
         font-size: 0.9rem;
     }
+
+    article{
+        max-width: 360px;
+    }
+
+    .contenedor-section{
+        flex-direction: column-reverse;
+    }
+
+    .imagen-section img{
+        max-width: 300px;
+    }
 }
 
 #explore-more {
